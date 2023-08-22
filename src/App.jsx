@@ -4,7 +4,7 @@ import Hero from "./components/Hero"
 import Analytics from "./components/Analytics"
 import Newsletter from "./components/Newsletter"
 import Cars from "./components/Cars"
-
+import Footer from "./components/Footer"
 function App() {
   return (
     <>
@@ -14,7 +14,8 @@ function App() {
         <Analytics />
         <Newsletter />
         <Cars />
-      
+        <Footer/>
+        
     </>
   )
 }

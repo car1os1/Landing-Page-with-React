@@ -4,7 +4,7 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 
 
 const Navbar = () => {
-    const [nav, setNav] = useState(true)
+    const [nav, setNav] = useState(false)
     const handleNav = () => {
         setNav(!nav)
     }
@@ -22,7 +22,7 @@ const Navbar = () => {
                 {!nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
             </div>
 
-            <div className={!nav ? ' fixed left-0 top-0 w-[60%] h-full border-r ease-in-out duration-500 b{order-r-grey-900 bg-[#252B48]' : 'ease-in-out duration-500 fixed left-[-100%]'}>
+            <div className={nav ? ' fixed left-0 top-0 w-[60%] h-full border-r ease-in-out duration-500 b{order-r-grey-900 bg-[#252B48]' : 'ease-in-out duration-500 fixed left-[-100%]'}>
                 <h1 className='w-full text-3xl font-bold text-[#5B9A8B] m-4'>Finance</h1>
 
                 <ul className=' uppercase p-4'>
